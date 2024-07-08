@@ -19,6 +19,7 @@ body {
 
 .profile-photo {
     border-radius: 50%;
+    border: 3px solid #007BFF;  /* Add border to the image */
     width: 100px;
     height: 100px;
     object-fit: cover;
