@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="profile-card">
+        <img src="{{ url_for('static', filename='profile.jpg') }}" alt="User Photo" class="profile-photo">
+        <h1 class="profile-name">Dyno Pro</h1>
+        <p class="profile-email">dynopro@ajmaltech.com</p>
+        <p class="profile-bio">Dyno is an experienced IT support team member with a strong background in troubleshooting and resolving technical issues. He is dedicated to providing excellent customer service and ensuring smooth IT operations for all users.</p>
+        </p>
+        <button class="profile-button">Follow</button>
+    </div>
+</body>
+</html>
