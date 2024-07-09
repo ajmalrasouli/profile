@@ -12,7 +12,7 @@ This project is a demo user profile application built with Flask. It demonstrate
 - Dockerized for easy deployment
 - Automated CI/CD pipeline using GitHub Actions
 
-![Profile Snippet](/static/image.png) 
+![Profile Snippet](/static/image2.png) 
 
 ## Getting Started
 
