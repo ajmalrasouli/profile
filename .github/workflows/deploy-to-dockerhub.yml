@@ -28,7 +28,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/my-flask-app:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/profile-app:latest
 
       - name: Log out from Docker Hub
         run: docker logout
