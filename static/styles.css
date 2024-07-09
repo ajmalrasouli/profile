@@ -1,57 +1,100 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
 }
 
 .profile-card {
-    background-color: white;
-    border-radius: 10px;
+    background: #ff6b81;
+    border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    text-align: center;
     width: 300px;
+    text-align: center;
+    color: white;
+    position: relative;
 }
 
-.profile-photo {
-    border-radius: 50%;
-    border: 3px solid #007BFF;  /* Add border to the image */
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.profile-pic {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.profile-pic img {
     width: 100px;
     height: 100px;
-    object-fit: cover;
-    margin-bottom: 20px;
+    border-radius: 50%;
+    border: 4px solid white;
 }
 
-.profile-name {
-    font-size: 24px;
-    margin: 0;
+.name {
+    margin: 10px 0;
+    font-size: 22px;
 }
 
-.profile-email {
-    color: #777;
-    font-size: 14px;
+.profession {
     margin: 5px 0;
+    font-size: 14px;
+    color: #f0f0f0;
 }
 
-.profile-bio {
-    font-size: 16px;
-    margin: 15px 0;
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
 }
 
-.profile-button {
-    background-color: #007BFF;
-    border: none;
-    border-radius: 5px;
-    color: white;
+.social-icons i {
+    margin: 0 10px;
+    font-size: 18px;
     cursor: pointer;
-    font-size: 16px;
-    padding: 10px 20px;
 }
 
-.profile-button:hover {
-    background-color: #0056b3;
+.follow-btn {
+    background-color: white;
+    color: #ff6b81;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.follow-btn:hover {
+    background-color: #ff3f5e;
+    color: white;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.stat-label {
+    font-size: 12px;
 }

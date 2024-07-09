@@ -3,17 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Profile</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Profile App</title>
+    <link rel="stylesheet" href="static/styles.css">
 </head>
 <body>
     <div class="profile-card">
-        <img src="{{ url_for('static', filename='profile.jpg') }}" alt="User Photo" class="profile-photo">
-        <h1 class="profile-name">Dyno Pro</h1>
-        <p class="profile-email">dynopro@ajmaltech.com</p>
-        <p class="profile-bio">Dyno is an experienced IT support team member with a strong background in troubleshooting and resolving technical issues. He is dedicated to providing excellent customer service and ensuring smooth IT operations for all users.</p>
-        </p>
-        <button class="profile-button">Follow</button>
+        <div class="header">
+            <div class="menu-icon">☰</div>
+        </div>
+        <div class="profile-pic">
+            <img src="static/profile.jpg" alt="Profile Picture">
+        </div>
+        <h2 class="name">Dyno Pro</h2>
+        <p class="profession">Web | Graphic | UI / UX</p>
+        <div class="social-icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+        <button class="follow-btn">FOLLOW</button>
+        <div class="stats">
+            <div class="stat">
+                <span class="stat-number">12</span>
+                <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">2538</span>
+                <span class="stat-label">Followers</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">429</span>
+                <span class="stat-label">Following</span>
+            </div>
+        </div>
     </div>
 </body>
 </html>
